@@ -1,10 +1,13 @@
-import { Header } from "../comps/Header"
+import Header from "../comps/Header"
+
 
 const layoutStyle = {
 
-    margin: 20,
-    padding: 20,
-    border: "1px solid #DDD"
+    margin: 80,
+    padding: 80,
+    border: "1px solid #DDD",
+    textDecoration: "none"
+
 }
 
 export const Layout = props => (
