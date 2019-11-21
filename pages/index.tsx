@@ -6,10 +6,25 @@ import { MaterialUiButton } from "../comps/MaterialUiButton"
 
 
 
+
 interface PostLinkProps {
     title: string
 
 }
+
+
+const headline = {
+
+    display: "flex",
+    alignItems: "center",
+    padding: 20,
+    justifyContent: "center",
+    fontSize: 40
+
+
+};
+
+
 
 
 
@@ -26,8 +41,8 @@ export const PostLink: React.FC<PostLinkProps> = props => (
 
 export default function NextJsPractice() {
     return (
-        <Layout>
-            <h1>Next.js Practice</h1>
+        <Layout style={headline}>
+            <h1 style={headline}>Next.js Practice</h1>
             <ul>
                 <PostLink title="Next.js" />
                 <PostLink title="Bla Blub" />

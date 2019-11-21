@@ -97,105 +97,99 @@ module.exports =
 /*!*************************!*\
   !*** ./comps/Header.js ***!
   \*************************/
-/*! exports provided: default */
+/*! exports provided: headerStyle, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "headerStyle", function() { return headerStyle; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/Link */ "next/Link");
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/philipp/Projects/next-ts/comps/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
-
 const linkStyle = {
-  marginRight: 15,
   display: "flex",
   alignItems: "center",
   padding: 20,
   justifyContent: "center"
 };
-const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => ({
-  '@global': {
-    body: {
-      backgroundColor: theme.palette.common.white
-    }
-  },
-  paper: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    margin: theme.spacing(1),
-    width: '100%'
-  }
-}));
+const headerStyle = {
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  padding: 20,
+  justifyContent: "center"
+};
 function Header() {
-  const classes = useStyles();
-  return __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    className: classes.paper,
+  return __jsx("div", {
+    style: headerStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 37
     },
     __self: this
   }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 38
     },
     __self: this
   }, __jsx("a", {
     style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 38
     },
     __self: this
   }, "Home")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 39
     },
     __self: this
   }, __jsx("a", {
     style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 39
     },
     __self: this
   }, "About")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/signUp",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 40
     },
     __self: this
   }, __jsx("a", {
     style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 40
     },
     __self: this
-  }, "Sign Up Mate"))));
+  }, "Sign Up Mate")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/data",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, __jsx("a", {
+    style: linkStyle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, "Data Page")));
 }
 
 /***/ }),
@@ -297,65 +291,74 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+const headline = {
+  display: "flex",
+  alignItems: "center",
+  padding: 20,
+  justifyContent: "center",
+  fontSize: 40
+};
 const PostLink = props => __jsx(next_Link__WEBPACK_IMPORTED_MODULE_2___default.a, {
   href: `/post?title=${props.title}`,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 33
   },
   __self: undefined
 }, __jsx(_comps_MaterialUiButton__WEBPACK_IMPORTED_MODULE_3__["MaterialUiButton"], {
   onClick: () => alert("redirect"),
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 35
   },
   __self: undefined
 }, __jsx("a", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 36
   },
   __self: undefined
 }, props.title)));
 function NextJsPractice() {
   return __jsx(_comps_MyLayout__WEBPACK_IMPORTED_MODULE_1__["Layout"], {
+    style: headline,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 44
     },
     __self: this
   }, __jsx("h1", {
+    style: headline,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 45
     },
     __self: this
   }, "Next.js Practice"), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 46
     },
     __self: this
   }, __jsx(PostLink, {
     title: "Next.js",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 47
     },
     __self: this
   }), __jsx(PostLink, {
     title: "Bla Blub",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 48
     },
     __self: this
   }), __jsx(PostLink, {
     title: "Deploy apps with Zeit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 49
     },
     __self: this
   })));
@@ -375,17 +378,6 @@ module.exports = __webpack_require__(/*! /Users/philipp/Projects/next-ts/pages/i
 
 /***/ }),
 
-/***/ "@material-ui/core/AppBar":
-/*!*******************************************!*\
-  !*** external "@material-ui/core/AppBar" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/AppBar");
-
-/***/ }),
-
 /***/ "@material-ui/core/Button":
 /*!*******************************************!*\
   !*** external "@material-ui/core/Button" ***!
@@ -394,17 +386,6 @@ module.exports = require("@material-ui/core/AppBar");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Button");
-
-/***/ }),
-
-/***/ "@material-ui/core/styles":
-/*!*******************************************!*\
-  !*** external "@material-ui/core/styles" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/styles");
 
 /***/ }),
 
