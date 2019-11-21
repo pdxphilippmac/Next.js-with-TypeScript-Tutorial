@@ -2,8 +2,7 @@ import React, { FC, MouseEvent } from "react"
 
 import { Layout } from "../comps/MyLayout"
 import Link from "next/Link"
-import Button from "@material-ui/core/Button";
-
+import { MaterialUiButton } from "../comps/MaterialUiButton"
 
 
 
@@ -18,13 +17,9 @@ export const PostLink: React.FC<PostLinkProps> = props => (
 
     <Link href={`/post?title=${props.title}`}>
 
-        <Button
-            type="submit"
-            variant="contained"
-            color="primary"
-            onClick={() => alert("redirect")}
-
-        ><a>{props.title}</a></Button>
+        <MaterialUiButton onClick={() => alert("redirect")}>
+            <a>{props.title}</a>
+        </MaterialUiButton>
     </Link>
 
 );

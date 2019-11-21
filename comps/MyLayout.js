@@ -1,4 +1,4 @@
-import { Header } from "../comps/Header"
+import Header from "../comps/Header"
 
 
 const layoutStyle = {
