@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -107,48 +107,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/Link */ "next/Link");
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/philipp/Projects/next-ts/comps/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
 const linkStyle = {
-  marginRight: 15
+  marginRight: 15,
+  backgroundColor: "green",
+  display: "flex",
+  alignItems: "center",
+  padding: 20,
+  justifyContent: "center"
 };
-const Header = () => __jsx("div", {
+const Header = () => __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2___default.a, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 20
+  },
+  __self: undefined
+}, __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21
   },
   __self: undefined
 }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
   href: "/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 22
   },
   __self: undefined
 }, __jsx("a", {
   style: linkStyle,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 22
   },
   __self: undefined
 }, "Home")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
   href: "/about",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 23
   },
   __self: undefined
 }, __jsx("a", {
   style: linkStyle,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 23
   },
   __self: undefined
-}, "About")));
+}, "About"))));
 
 /***/ }),
 
@@ -170,21 +184,22 @@ var _jsxFileName = "/Users/philipp/Projects/next-ts/comps/MyLayout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: "1px solid #DDD"
+  margin: 80,
+  padding: 80,
+  border: "1px solid #DDD",
+  textDecoration: "none"
 };
 const Layout = props => __jsx("div", {
   style: layoutStyle,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 15
   },
   __self: undefined
 }, __jsx(_comps_Header__WEBPACK_IMPORTED_MODULE_1__["Header"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 16
   },
   __self: undefined
 }), props.children);
@@ -246,7 +261,7 @@ const Page = () => __jsx(_comps_MyLayout_js__WEBPACK_IMPORTED_MODULE_2__["Layout
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/post.tsx ***!
   \******************************/
@@ -255,6 +270,17 @@ const Page = () => __jsx(_comps_MyLayout_js__WEBPACK_IMPORTED_MODULE_2__["Layout
 
 module.exports = __webpack_require__(/*! /Users/philipp/Projects/next-ts/pages/post.tsx */"./pages/post.tsx");
 
+
+/***/ }),
+
+/***/ "@material-ui/core/AppBar":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/AppBar" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/AppBar");
 
 /***/ }),
 

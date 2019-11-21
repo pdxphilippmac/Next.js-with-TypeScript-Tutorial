@@ -1,8 +1,10 @@
 import { Layout } from "../comps/MyLayout"
+import Card from '@material-ui/core/Card';
 export default function About() {
 
     return (
 
-        <Layout><p>This is about page</p></Layout>)
+        <Layout>
+            <Card><p>This is about page</p></Card></Layout>)
 
 }

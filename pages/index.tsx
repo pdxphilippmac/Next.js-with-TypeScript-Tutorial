@@ -1,7 +1,9 @@
-import * as React from 'react'
-import { NextPage } from "next"
+import React, { FC, MouseEvent } from "react"
+
 import { Layout } from "../comps/MyLayout"
 import Link from "next/Link"
+import Button from "@material-ui/core/Button";
+
 
 
 
@@ -10,12 +12,21 @@ interface PostLinkProps {
 
 }
 
+
+
 export const PostLink: React.FC<PostLinkProps> = props => (
-    <li>
-        <Link href={`/post?title=${props.title}`}>
-            <a>{props.title}</a>
-        </Link>
-    </li>
+
+    <Link href={`/post?title=${props.title}`}>
+
+        <Button
+            type="submit"
+            variant="contained"
+            color="primary"
+            onClick={() => alert("redirect")}
+
+        ><a>{props.title}</a></Button>
+    </Link>
+
 );
 
 export default function NextJsPractice() {
@@ -30,3 +41,4 @@ export default function NextJsPractice() {
         </Layout>
     );
 }
+
